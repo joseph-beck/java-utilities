@@ -1,5 +1,5 @@
 package datastructures.linkedlist;
 
-public class LinkedList<T> {
+public class LinkedList {
     
 }
