@@ -26,4 +26,28 @@ public class Vector3<T> implements IVector<Vector3<T>> {
     public Vector3<T> normalise() {
         throw new UnsupportedOperationException("Unimplemented method 'normalise'");
     }
+    
+    public T getX() {
+        return this.x;
+    }
+
+    public void setX(T x) {
+        this.x = x;
+    }
+
+    public T getY() { 
+        return this.y;
+    }
+
+    public void setY(T y) {
+        this.y = y;
+    }
+
+    public T getZ() {
+        return this.z;
+    }
+
+    public void setZ(T z) {
+        this.z = z;
+    }
 }
