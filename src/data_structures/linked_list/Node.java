@@ -1,4 +1,4 @@
-package datastructures.linkedlist;
+package data_structures.linked_list;
 
 public class Node<T> {
    

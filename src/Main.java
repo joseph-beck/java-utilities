@@ -1,4 +1,4 @@
-import datastructures.linkedlist.LinkedList;
+import data_structures.linked_list.LinkedList;
 import sorters.BogoSort;
 
 public class Main {
