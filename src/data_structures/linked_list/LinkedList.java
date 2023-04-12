@@ -6,10 +6,6 @@ public class LinkedList<T> {
     
     private SingleNode<T> head;
 
-    public LinkedList(SingleNode<T> head) {
-        this.head = head;
-    }
-
     public LinkedList(T[] data) {
         generate(data);
     }
@@ -56,7 +52,6 @@ public class LinkedList<T> {
             cursor = cursor.getNext();
             size++;
         }
-
         return size;
     }
 
@@ -88,7 +83,6 @@ public class LinkedList<T> {
         while (cursor.getNext() != null) {
             cursor = cursor.getNext();
         }
-        
         cursor.setNext(new SingleNode<T>(value));
     }
 
