@@ -1,6 +1,7 @@
 main() {
     ant
-    java -cp bin: Main
+    read args
+    java -cp bin: Main $args
 }
 
 time main
