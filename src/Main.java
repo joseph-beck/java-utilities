@@ -14,5 +14,6 @@ public class Main {
         ll.push(0);
         System.out.println(ll.size());
         ll.print();
+        System.out.println(ll);
     }
 }

@@ -1,40 +1,40 @@
 package data_structures.linked_list;
 
-public class Node<T> {
+class SingleNode<T> {
    
     private T value;
-    private Node<T> next;
+    private SingleNode<T> next;
 
-    public Node(T value, Node<T> next) {
+    public SingleNode(T value, SingleNode<T> next) {
         this.value = value;
         this.next = next;
     }
 
-    public Node(T value) {
+    public SingleNode(T value) {
         this.value = value;
         this.next = null;
     }
 
-    public Node(Node<T> next) {
+    public SingleNode(SingleNode<T> next) {
         this.value = null;
         this.next = next;
     }
 
-    public Node() {
+    public SingleNode() {
         this.value = null;
         this.next = null;
     }
 
-    public Node<T> copy() {
+    public SingleNode<T> copy() {
         return this;
     }
 
-    public void set(Node<T> setter) {
+    public void set(SingleNode<T> setter) {
         this.value = setter.getValue();
         this.next = setter.getHead();
     }
 
-    public Node<T> getHead() {
+    public SingleNode<T> getHead() {
         if (value == null) return this;
 
         return null;
@@ -48,11 +48,11 @@ public class Node<T> {
         this.value = value;
     }
 
-    public Node<T> getNext() {
+    public SingleNode<T> getNext() {
         return this.next;
     }
 
-    public void setNext(Node<T> next) {
+    public void setNext(SingleNode<T> next) {
         this.next = next;
     }
 }
