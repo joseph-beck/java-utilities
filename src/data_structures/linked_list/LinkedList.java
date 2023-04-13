@@ -55,6 +55,16 @@ public class LinkedList<T> {
         return size;
     }
 
+    public boolean contains(T value) {
+        if (isEmpty()) return false;
+
+        SingleNode<T> cursor = head.getNext();
+        while (cursor != null) {
+            if (cursor.getValue() == value) return true;
+        }
+        return false;
+    }
+
     public T get(int index) {
         if (index > size() - 1) return null;
 
@@ -114,6 +124,10 @@ public class LinkedList<T> {
         SingleNode<T> cursor = head;
         for (int i = 0; i < index + 1; i++) cursor = cursor.getNext();
         return cursor.copy();
+    }
+
+    public boolean isEmpty() {
+        return (head == null || head.getNext() == null);
     }
 
     @Override
