@@ -6,6 +6,7 @@ import data_structures.linked_list.LinkedList;
 import sorters.BogoSort;
 import sorters.BubbleSort;
 import sorters.InsertionSort;
+import sorters.QuickSort;
 
 public class Main {
 
@@ -19,7 +20,7 @@ public class Main {
             array[i] = random.nextInt(count);
         }
 
-        array = InsertionSort.sort(array);
+        array = QuickSort.sort(array);
         for (int i : array) {
            System.out.printf("%d, ", i); 
         }
