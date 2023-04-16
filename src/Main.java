@@ -1,8 +1,9 @@
 import java.util.Random;
 
-import javax.swing.text.StyledEditorKit.ForegroundAction;
-
 import data_structures.linked_list.LinkedList;
+import date.Date;
+import date.Day;
+import date.Month;
 import sorters.BogoSort;
 import sorters.BubbleSort;
 import sorters.InsertionSort;
@@ -24,5 +25,8 @@ public class Main {
         for (int i : array) {
            System.out.printf("%d, ", i); 
         }
+        
+        Date date = new Date(Day.MONDAY, 12, Month.AUGUST, 2003);
+        System.out.println(date);
     }
 }

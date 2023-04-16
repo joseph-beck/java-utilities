@@ -21,8 +21,7 @@ public class QuickSort {
                 while(array[++lower] < pivot);
                 while(array[--higher] > pivot);
 
-                if(lower >= higher)
-                    break;
+                if(lower >= higher) break;
                 temp = array[lower];
 
                 array[lower] = array[higher];
