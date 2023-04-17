@@ -1,6 +1,6 @@
 package maths.matrices;
 
-public abstract interface IMatrix<V> {
+abstract interface IMatrix<V> {
     
     public V add(V matrix);
 

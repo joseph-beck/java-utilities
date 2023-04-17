@@ -1,6 +1,6 @@
 package maths.vectors;
 
-public abstract interface IVector<V> {
+abstract interface IVector<V> {
     
     public V add(V vector);
 

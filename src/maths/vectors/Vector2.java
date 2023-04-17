@@ -1,5 +1,9 @@
 package maths.vectors;
 
+import javax.print.attribute.IntegerSyntax;
+
+import types.Types;
+
 public class Vector2<T> implements IVector<Vector2<T>> {
    
     private T x;
