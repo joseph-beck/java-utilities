@@ -1,10 +1,10 @@
 .PHONY: test run build
 
 test:
-	@scripts/test.sh
+	@bash ./scripts/test.sh
 
 run:
-	@scripts/run.sh
+	@bash ./scripts/run.sh
 
 build:
-	@scripts/run.sh
+	@bash ./scripts/run.sh
