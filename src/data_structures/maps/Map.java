@@ -23,26 +23,55 @@ public class Map<T, V> implements IMap<T, V> {
 
     @Override
     public void remove(T key) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'remove'");
+        for (int i = 0; i < map.size(); i++) {
+            if (map.get(i).getKey() == key) map.remove(i);
+        }
     }
 
     @Override
     public void remove(Pair<T, V> pair) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'remove'");
+        for (int i = 0; i < map.size(); i++) {
+            if (map.get(i).getKey() == pair.getKey()) map.remove(i);
+        }
     }
 
     @Override
     public V get(T key) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'get'");
+        for (int i = 0; i < map.size(); i++) {
+            if (map.get(i).getKey() == key) return map.get(i).getValue();
+        }
+        return null;
     }
 
     @Override
     public void set(T key, V value) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'set'");
+        for (int i = 0; i < map.size(); i++) {
+            if (map.get(i).getKey() == key) {
+                map.remove(i);
+                map.add(new Pair<T, V>(key, value));
+            }
+        }
     }
 
+    @Override
+    public void replace(T key, Pair<T, V> pair) {
+        for (int i = 0; i < map.size(); i++) {
+            if (map.get(i).getKey() == key) {
+                map.remove(i);
+                map.add(pair);
+            }
+        }
+    }
+
+    @Override
+    public void sort() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'sort'");
+    }
+
+    @Override
+    public void sort(boolean descending) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'sort'");
+    }
 }

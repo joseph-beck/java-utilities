@@ -37,5 +37,23 @@ public class SetMap implements IMap {
         // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'set'");
     }
+
+    @Override
+    public void replace(Object key, Pair pair) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'replace'");
+    }
+
+    @Override
+    public void sort() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'sort'");
+    }
+
+    @Override
+    public void sort(boolean descending) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'sort'");
+    }
     
 }
