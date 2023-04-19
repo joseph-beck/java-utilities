@@ -1,6 +1,6 @@
 package data_structures.maps;
 
-public class Pair<T, V> {
+class Pair<T, V> {
     
     private T key;
     private V value;

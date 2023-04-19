@@ -19,4 +19,8 @@ abstract interface IMap<T, V> {
     public abstract void sort();
 
     public abstract void sort(boolean descending);
+
+    public abstract boolean contains(T key);
+
+    public abstract boolean contains(Pair<T, V> pair);
 }

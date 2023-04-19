@@ -74,4 +74,20 @@ public class Map<T, V> implements IMap<T, V> {
         // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'sort'");
     }
+
+	@Override
+	public boolean contains(T key) {
+		for (int i = 0; i < map.size(); i++) {
+            if (map.get(i).getKey() == key) return true;
+        }
+        return false;
+	}
+
+	@Override
+	public boolean contains(Pair<T, V> pair) {
+		for (int i = 0; i < map.size(); i++) {
+            if (map.get(i).getKey() == pair.getKey()) return true;
+        }
+        return false;
+	}
 }
