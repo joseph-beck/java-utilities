@@ -1,6 +1,7 @@
 import java.util.Random;
 
 import data_structures.linked_list.LinkedList;
+import data_structures.stacks.Stack;
 import date.Date;
 import date.Day;
 import date.Month;
@@ -28,5 +29,10 @@ public class Main {
         
         Date date = new Date(Day.MONDAY, 12, Month.AUGUST, 2003);
         System.out.println(date);
+    
+        Stack<String> stack = new Stack<String>(5);
+        stack.push("hey");
+        stack.push("there");
+        System.out.println(stack.toString());
     }
 }
