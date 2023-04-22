@@ -6,25 +6,25 @@ public class Stack<T> {
     
     private int size;
     private int top = -1;
-    private ArrayList<T> queue;
+    private ArrayList<T> stack;
 
     public Stack(int size) {
         this.size = size;
-        this.queue = new ArrayList<T>(size);
+        this.stack = new ArrayList<T>(size);
     }
 
     public void push(T item) {
         if (isFull()) return;
 
         top++;
-        queue.add(top, item);
+        stack.add(top, item);
     }   
     
     public T pop() {
         if (isEmpty()) return null;
 
-        T item = queue.get(top);
-        queue.remove(top);
+        T item = stack.get(top);
+        stack.remove(top);
         top--;
 
         return item;
@@ -33,7 +33,7 @@ public class Stack<T> {
     public T top() {
         if (isEmpty()) return null;
 
-        return queue.get(top);
+        return stack.get(top);
     }
 
     public boolean isEmpty() {
@@ -52,7 +52,7 @@ public class Stack<T> {
     public String toString() {
         String output = "";
 
-        for (T item : queue) {
+        for (T item : stack) {
             if (item != null) output += item + "\n";
         }
 
